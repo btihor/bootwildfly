@@ -8,7 +8,7 @@ As an added bonus, this repo can also be deployed directly as a docker container
 What, you don't have OpenShift 3 yet? Fix that immediately: www.openshift.org/vm
 
 ---
-
+```
 node {
     stage 'Checkout'
     git branch: 'master', url: 'https://github.com/btihor/bootwildfly.git'   
@@ -22,5 +22,5 @@ node {
     stage 'Test'
     sh "${mvnHome}/bin/mvn -f pom.xml test"
 }
-
+```
 ---
